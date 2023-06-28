@@ -1,0 +1,17 @@
+entity Adulto {
+  nombre String required,
+  apellido String required,
+  edad Integer,
+  fechaNacimiento LocalDate
+}
+
+entity Ninio {
+  nombre String required,
+  apellido String required,
+  edad Integer,
+  fechaNacimiento LocalDate
+}
+
+relationship OneToMany {
+  Adulto{ninios} to Ninio{adulto}
+}

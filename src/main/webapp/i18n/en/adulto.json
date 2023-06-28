@@ -1,0 +1,28 @@
+{
+  "prueba2App": {
+    "adulto": {
+      "home": {
+        "title": "Adultos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Adulto",
+        "createOrEditLabel": "Create or edit a Adulto",
+        "notFound": "No Adultos found"
+      },
+      "created": "A new Adulto is created with identifier {{ param }}",
+      "updated": "A Adulto is updated with identifier {{ param }}",
+      "deleted": "A Adulto is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Adulto {{ id }}?"
+      },
+      "detail": {
+        "title": "Adulto"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "edad": "Edad",
+      "fechaNacimiento": "Fecha Nacimiento",
+      "ninios": "Ninios"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "prueba2App": {
+    "ninio": {
+      "home": {
+        "title": "Ninios",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Ninio",
+        "createOrEditLabel": "Crear o editar Ninio",
+        "notFound": "Ningún Ninios encontrado"
+      },
+      "created": "Un nuevo Ninio ha sido creado con el identificador {{ param }}",
+      "updated": "Un Ninio ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Ninio ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Ninio {{ id }}?"
+      },
+      "detail": {
+        "title": "Ninio"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "edad": "Edad",
+      "fechaNacimiento": "Fecha Nacimiento",
+      "adulto": "Adulto"
+    }
+  }
+}

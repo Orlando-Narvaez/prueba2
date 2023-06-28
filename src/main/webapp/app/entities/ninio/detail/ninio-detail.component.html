@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="ninio">
+      <h2 data-cy="ninioDetailsHeading"><span jhiTranslate="prueba2App.ninio.detail.title">Ninio</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ ninio.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="prueba2App.ninio.nombre">Nombre</span></dt>
+        <dd>
+          <span>{{ ninio.nombre }}</span>
+        </dd>
+        <dt><span jhiTranslate="prueba2App.ninio.apellido">Apellido</span></dt>
+        <dd>
+          <span>{{ ninio.apellido }}</span>
+        </dd>
+        <dt><span jhiTranslate="prueba2App.ninio.edad">Edad</span></dt>
+        <dd>
+          <span>{{ ninio.edad }}</span>
+        </dd>
+        <dt><span jhiTranslate="prueba2App.ninio.fechaNacimiento">Fecha Nacimiento</span></dt>
+        <dd>
+          <span>{{ ninio.fechaNacimiento | formatMediumDate }}</span>
+        </dd>
+        <dt><span jhiTranslate="prueba2App.ninio.adulto">Adulto</span></dt>
+        <dd>
+          <div *ngIf="ninio.adulto">
+            <a [routerLink]="['/adulto', ninio.adulto?.id, 'view']">{{ ninio.adulto?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/ninio', ninio.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
